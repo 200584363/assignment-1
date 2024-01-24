@@ -7,6 +7,7 @@ body {
     width: 55%;
     margin: auto;
 }
+/* Start of CSS form*/
 form {
     width: auto;
     height: auto;
@@ -95,6 +96,7 @@ textarea {
     margin-top: 30px;
     cursor: pointer;
 }
+/* End of CSS form*/
 footer {
     font-size: 16px;
     font-weight: 600;
