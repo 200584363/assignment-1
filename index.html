@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment-1">
+    <meta name="keywords" content="">
+    <meta name="author" content="Utsav Patel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/pizza.png" type="image/x-icon" />
+    <title>Pizza Ordering Website</title>
+    <script>
+        // script to display form data
+        function display() {
+            DispWin = window.open('', 'NewWin', 'toolbar=no, status=no,width=600,height=400')
+            message = '<b>Customer Name: </b>' + document.form1.yourname.value + '<br>';
+            message += '<b>Customer Phone: </b>' + document.form1.phone.value + '<br>';
+            message += '<b>Customer Email ID: </b>' + document.form1.youremail.value + '<br>';
+            message += '<b>Customer Address: </b>' + document.form1.streetaddress.value + '<br>';
+            message += '<b>Number of Pizza Order: </b>' + document.form1.orderpizza.value;
+            DispWin.document.write(message);
+        }
+        // End of script 
+    </script>
+</head>
+<body>
+    <center><img src="images/pizza_img.jpg" class="img1"></center>
+    <!-- Main content -->
+    <main>
+        <section class="container">
+            <!-- Page-level header -->
+            <header>
+                <h1><img src="images/order.png" width="20px"> Pizza Order Form</h1>
+            </header>
+            <!-- End of Page-level header -->
+            </center>
+            <!-- Form for Pizza Order -->
+            <form name="form1">
+                <h3><img src="images/add.png" width="17px"> Customize your pizza</h3>
+                <div class="mydiv">
+                    <label><strong>Number of Pizza's:</strong></label><br>
+                    <input type="number" class="input1" name="orderpizza" placeholder="Enter no." required>
+                </div>
+                <div class="mydiv">
+                    <label><strong>Size of Pizza:</strong></label><br>
+                    <select name="input1" id="size" required>
+                        <option value="Personal (10 inches)">Personal (10 inches)</option>
+                        <option value="Small (12 inches)">Small (12 inches)</option>
+                        <option value="Medium (14 inches)">Medium (14 inches)</option>
+                        <option value="Large (16 inches)">Large (16 inches)</option>
+                    </select>
+                </div>
+                <div class="mydiv">
+                    <label><strong>Shape of pizza:</strong></label><br>
+                    <select name="input1" id="shape" required>
+                        <option value="round">Round</option>
+                        <option value="Square">Square</option>
+                    </select>
+                </div><br>
+                <div class="mydiv2">
+                    <label><strong>Select Toppings:</strong></label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="mushroom">
+                    <label for="topping2">Mushroom</label><br>
+                    <input type="checkbox" id="topping3" name="topping3" value="Black olives">
+                    <label for="topping3">Black olives</label><br>
+                    <input type="checkbox" id="topping4" name="topping4" value="Capers, Capsicum.">
+                    <label for="topping4">Capers, Capsicum</label><br>
+                    <input type="checkbox" id="topping5" name="topping5" value="pepperoni">
+                    <label for="topping5">Pepperoni</label><br>
+                    <input type="checkbox" id="topping6" name="topping6" value="mozzarella cheese">
+                    <label for="topping6">Mozzarella cheese</label><br>
+                </div>
+                <div class="mydiv2">
+                    <label><strong>Select Crust Type:</strong></label><br>
+                    <input type="radio" id="hand toassed" name="curst" value="hand toassed">
+                    <label for="hand toassed">Hand toassed</label><br>
+                    <input type="radio" id="thin and crispy" name="curst" value="thin and crispy">
+                    <label for="thin and crispy">Thin and Crispy</label><br>
+                    <input type="radio" id="Chewy and Crispy Delights." name="curst" value="Chewy and Crispy Delights">
+                    <label for="Chewy and Crispy Delights">Chewy and Crispy</label><br>
+                    <input type="radio" id="Flatbread: Crack-Like Slices" name="curst"
+                        value="Flatbread: Crack-Like Slices">
+                    <label for="Flatbread: Crack-Like Slices">Flatbread Slices</label><br>
+                    <input type="radio" id="Toasty Crust" name="curst" value="Toasty Crust">
+                    <label for="Toasty Crust">Toasty Crust</label><br>
+                </div>
+                <div class="mydiv2">
+                    <label><strong>Additional items:</strong></label><br>
+                    <input type="checkbox" id="Additional" name="Additional" value="Garlic Bread">
+                    <label for="Additional">Garlic Bread</label><br>
+                    <input type="checkbox" id="Additional2" name="Additional2" value="Caesar Salad">
+                    <label for="Additional2">Caesar Salad</label><br>
+                    <input type="checkbox" id="Additional3" name="Additional3" value="Soft Drink">
+                    <label for="Additional3">Soft Drink</label><br>
+                    <input type="checkbox" id="Additional4" name="Additional4" value="Garden Salad">
+                    <label for="Additional4">Garden Salad</label><br>
+                    <input type="checkbox" id="Additional5" name="Additional5" value="Mozzarella Sticks">
+                    <label for="Additional5">Mozzarella Sticks</label><br>
+                </div><br>
+                <!-- Customer Details -->
+                <h3><img src="images/information.png" width="17px"> Customer Details</h3>
+                <div class="mydiv3">
+                    <label><strong>Name:</strong></label><br>
+                    <input type="text" class="input1" required placeholder="Enter your name..." name="yourname"
+                        autocomplete="off">
+                </div>
+                <div class="mydiv3">
+                    <label><strong>Phone no:</strong></label><br>
+                    <input type="number" class="input1" required name="phone" placeholder="(999) 999-9999"
+                        autocomplete="off">
+                </div>
+                <div class="mydiv3">
+                    <label><strong>Email address:</strong></label><br>
+                    <input type="email" class="input1" required name="youremail" placeholder="example@mail.com"
+                        autocomplete="off">
+                </div><br><br>
+                <div class="mydiv3">
+                    <label><strong>Address:</strong></label><br>
+                    <input type="text" class="input1" required placeholder="Street Address" name="streetaddress"
+                        id="in1" autocomplete="off">
+                    <input type="text" class="input1" required placeholder="Apartment/Unit" id="in1" autocomplete="off">
+                </div><br>
+                <div class="mydiv3">
+                    <input type="text" class="input1" required placeholder="City" autocomplete="off">
+                </div>
+                <div class="mydiv3">
+                    <input type="text" class="input1" required placeholder="State/Province/Region">
+                </div>
+                <div class="mydiv3">
+                    <input type="text" class="input1" required placeholder="Postal/Zip Code">
+                </div><br><br>
+                <label><strong>Special instructions:</strong></label><br>
+                <textarea id="w3review" name="w3review" rows="5" cols="78"
+                    placeholder="Special instructions...."></textarea>
+                <!-- End customer Details -->
+
+                <!-- Payment options details -->
+                <h3><img src="images/wallet.png" width="17px"> Payment option</h3>
+                <div class="mydiv1">
+                    <input type="checkbox" id="Additional" name="Additional" value="Garlic Bread">
+                    <label for="Additional">Cash on Delivery / Pickup</label><br>
+                    <input type="checkbox" id="Additional2" name="Additional2" value="Caesar Salad">
+                    <label for="Additional2">Cerdit Card / Debit Card</label><br>
+                </div>
+                <center><input type="submit" value="Submit" class="button" onclick="display();" />
+                    <input type="reset" value="Cancel" class="button" />
+                </center>
+            </form>
+            <!-- End of Form -->
+        </section>
+    </main>
+    <!-- End of Main content -->
+</body>
+<!-- Page-level footer -->
+<footer>
+    <center>© Pizza - HTML, CSS, and JS Blocks Inc. </center>
+</footer>
+<!-- End of footer -->
+</html>

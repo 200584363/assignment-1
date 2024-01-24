@@ -1,0 +1,107 @@
+/* CSS File to design web page */
+body {
+    font-family: Calibri;
+    background: linear-gradient(160deg, rgba(244, 222, 222, 0.82) 0%, rgba(232, 5, 5, 0.77) 100%);
+}
+.container {
+    width: 55%;
+    margin: auto;
+}
+form {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    background: whitesmoke;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+.input1 {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 220px;
+    margin-top: 6px;
+    box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
+}
+select {
+    border-radius: 5px;
+    height: 42px;
+    width: 220px;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
+}
+.img1 {
+    width: 55%;
+    height: 220px;
+    margin: 10px;
+    border-radius: 10px;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.mydiv {
+    display: inline-block;
+    margin-right: 20px;
+    align-content: center;
+}
+.mydiv2 {
+    display: inline-block;
+    margin-top: 15px;
+    width: 210px;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
+}
+.mydiv3 {
+    display: inline-block;
+    margin-right: 10px;
+    align-content: center;
+}
+#in1 {
+    width: 710px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+textarea {
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
+}
+.button {
+    height: 40px;
+    width: 120px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fc1f1fe8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
+    margin-top: 30px;
+    cursor: pointer;
+}
+footer {
+    font-size: 16px;
+    font-weight: 600;
+    width: 55%;
+    height: 20px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+}
