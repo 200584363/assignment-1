@@ -7,7 +7,6 @@ body {
     width: 55%;
     margin: auto;
 }
-/* Start of CSS form*/
 form {
     width: auto;
     height: auto;
@@ -68,11 +67,6 @@ h1 {
     margin-right: 10px;
     align-content: center;
 }
-#in1 {
-    width: 710px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
 textarea {
     padding: 10px;
     padding-left: 20px;
@@ -96,7 +90,6 @@ textarea {
     margin-top: 30px;
     cursor: pointer;
 }
-/* End of CSS form*/
 footer {
     font-size: 16px;
     font-weight: 600;
