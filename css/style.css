@@ -3,10 +3,24 @@ body {
     font-family: Calibri;
     background: linear-gradient(160deg, rgba(244, 222, 222, 0.82) 0%, rgba(232, 5, 5, 0.77) 100%);
 }
+/* css for Marquee (News & Information) */
+.mymarquee {
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    background-color: #cfcdcd;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #020c3d;
+    border: 1px solid #000;
+}
+/* css for section */
 .container {
     width: 55%;
     margin: auto;
 }
+/* css for Form */
 form {
     width: auto;
     height: auto;
@@ -16,6 +30,7 @@ form {
     padding: 30px;
     border-radius: 10px;
 }
+/* css for user input field */
 .input1 {
     border-radius: 5px;
     border: none;
@@ -38,6 +53,7 @@ select {
     border: none;
     box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
 }
+/* css for Image */
 .img1 {
     width: 55%;
     height: 220px;
@@ -48,6 +64,7 @@ h1 {
     font-weight: bolder;
     font-size: 30px;
 }
+/* design to organize the input fields in blocks */
 .mydiv {
     display: inline-block;
     margin-right: 20px;
@@ -67,6 +84,7 @@ h1 {
     margin-right: 10px;
     align-content: center;
 }
+/* css for textarea (Address) */
 textarea {
     padding: 10px;
     padding-left: 20px;
@@ -76,6 +94,7 @@ textarea {
     border: none;
     box-shadow: -1px -2px 15px 1px rgba(0, 0, 0, 0.29);
 }
+/* css for buttons */
 .button {
     height: 40px;
     width: 120px;
@@ -90,6 +109,7 @@ textarea {
     margin-top: 30px;
     cursor: pointer;
 }
+/* css for footer */
 footer {
     font-size: 16px;
     font-weight: 600;
